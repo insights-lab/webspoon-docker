@@ -5,10 +5,9 @@ services:
     ports:
       - "80:8080"
     volumes:
-      - /root/.kettle
       - /root/.pentaho
     environment:
       - "JAVA_OPTS=-Xms1024m -Xmx2048m"
+      - "KETTLE_HOME=/root/.pentaho/.kettle"
 volumes:
-  kettle:
   pentaho:
